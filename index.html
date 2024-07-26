@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+   <div class="content">
+    <div class="top-bar">
+        <i class='bx bx-chevron-down'></i>
+        <span>Now Playing</span>
+        <i class='bx bx-dots-horizontal-rounded'></i>
+    </div>
+    <div class="image-wrapper">
+        <div class="music-image">
+            <img src="/images/img1.jpg" alt="" srcset="">
+        </div>
+    </div>
+    <div class="music-title">
+        <p class="name">6 shots -NEFFEX</p>
+        <p class="artist">neffex</p>
+    </div>
+    <div class="progress-details">
+        <div class="progress-bar">
+            <span></span>
+        </div>
+        <div class="time">
+            <span class="current">0:00</span>
+            <span class="final">5:30</span>
+        </div>
+    </div>
+    <div class="control-btn">
+        <i class='bx bx-repost' id="repeat"></i>
+        <i class='bx bx-skip-previous' id="prev"></i>
+        <div class="play-pause">
+            <span class="material-symbols-outlined">play_arrow</span>
+        </div>
+        <i class='bx bx-skip-next' id="next"></i>
+        <i class='bx bx-shuffle' id="shuffle"></i>
+    </div>
+   </div>
+
+   <audio src="/music/music1.mp3" class="main-song"></audio>
+    <script src="script.js"></script>
+    <script src="playerlist.js"></script>
+</body>
+</html>
